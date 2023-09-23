@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&family=Unica+One&display=swap');
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('./WEB/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+       url('./WEB/fonts/ClashDisplay-Variable.woff') format('woff'),
+       url('./WEB/fonts/ClashDisplay-Variable.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('./WEB/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+       url('./WEB/fonts/ClashDisplay-Extralight.woff') format('woff'),
+       url('./WEB/fonts/ClashDisplay-Extralight.ttf') format('truetype');
+       font-weight: 200;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('./WEB/fonts/ClashDisplay-Light.woff2') format('woff2'),
+       url('./WEB/fonts/ClashDisplay-Light.woff') format('woff'),
+       url('./WEB/fonts/ClashDisplay-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('./WEB/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('./WEB/fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('./WEB/fonts/ClashDisplay-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('./WEB/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('./WEB/fonts/ClashDisplay-Medium.woff') format('woff'),
+       url('./WEB/fonts/ClashDisplay-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('./WEB/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('./WEB/fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('./WEB/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('./WEB/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('./WEB/fonts/ClashDisplay-Bold.woff') format('woff'),
+       url('./WEB/fonts/ClashDisplay-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MADE-TOMMY-Medium-Outline' format('truetype');
+  src: url('./WEB/MADE-TOMMY-Medium-Outline.otf');
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ClashDisplay-Book;
+ 
+}
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+.animate-typing {
+  animation: typing 3s steps(40, end) 1s infinite normal both;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.section {
+  margin-top: 100vh; /* Adjust this value as needed */
+  scroll-snap-align: start;
+  transition: margin-top 0.5s ease-in-out;
+}
