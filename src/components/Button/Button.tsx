@@ -1,12 +1,15 @@
-import React from "react";
+import React, {ReactNode} from "react";
 
 interface ButtonProps {
   name: string;
-  className ?: string;
-  onClick?: ()=> void
+  icon?: ReactNode;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ name, onClick, className }) => {
+const Button: React.FC<ButtonProps> = ({ name,icon, color,style, onClick, className }) => {
   const buttonStyle: React.CSSProperties = {
     borderRadius: "4px",
     background:
@@ -24,6 +27,7 @@ const Button: React.FC<ButtonProps> = ({ name, onClick, className }) => {
       className={`${className} transform hover:scale-125 transition-transform duration-300`}
     >
       {name}
+      {icon}
     </button>
   );
 };

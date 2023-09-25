@@ -10,6 +10,7 @@ import SectionSeven from "components/Landing/SectionSeven";
 import SectionEight from "components/Landing/SectionEight";
 import SectionNine from "components/Landing/SectionNine";
 import Footer from "components/Landing/Footer";
+import BackToTopBtn from "components/BackToTopbtn";
 
 function LandingPage() {
   return (
@@ -24,7 +25,8 @@ function LandingPage() {
       <SectionSeven />
       <SectionEight />
       <SectionNine />
-      <Footer/>
+      <Footer />
+      <BackToTopBtn/>
     </div>
   );
 }
